@@ -88,6 +88,8 @@ class FilterGroup extends React.Component {
   }
 
   handleSelect(sectionIndex, singleFilterLabel) {
+    console.log('gen3-ui-component handleSelect. sectionIndex: ', sectionIndex);
+    console.log('gen3-ui-component handleSelect. singleFilterLabel: ', singleFilterLabel);
     this.setState((prevState) => {
       // update filter status
       const newFilterStatus = prevState.filterStatus.slice(0);
